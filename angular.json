@@ -58,6 +58,9 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "pet-corner-ui-angular:build",
+            "proxyConfig": "proxy.conf.json"},
           "configurations": {
             "production": {
               "browserTarget": "pet-corner-ui-angular:build:production"
