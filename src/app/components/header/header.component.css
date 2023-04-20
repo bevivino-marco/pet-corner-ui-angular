@@ -21,7 +21,7 @@ ul {
     margin-right: 25px;
   }
   
-  li a {
+  li span {
     display: block;
     color: rgb(0, 0, 0);
     text-align: center;
@@ -29,7 +29,7 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
+  li span:hover {
     background-color: #87e28f;
   }
 

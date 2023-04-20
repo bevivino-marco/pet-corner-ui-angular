@@ -1,12 +1,16 @@
-export interface User {
-    id?: 1,
-    name:string,
-    age: number,
-    size: number,
-    type:string ,
-    description:string ,
-    owner: string,
-    provenance:string ,
-    microchip: string,
-    sex: null
+export interface User   {
+  id?: number ,
+  name :  string ,
+  username :  string ,
+  email :  string ,
+  address : {
+  street : string  ,
+  suite : string ,
+  city : string ,
+  zipcode: number,
+  geo: {
+  lat:  string ,
+  lng:  string
+    }
+  }
   }

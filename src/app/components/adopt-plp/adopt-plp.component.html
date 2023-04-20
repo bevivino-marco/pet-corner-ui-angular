@@ -1,1 +1,24 @@
-<p>adopt-plp works!</p>
+<div>
+    <h1>Adopt an animal</h1>
+</div>
+<div class="container">
+    <div class="plp-option-container">
+        <div class="agefilter">
+            <label>Filter by age</label>
+        </div>
+
+        <div class="ageSort">
+            <label>sort by age</label>
+        </div>
+
+        <div class="agefilter">
+            <button>APPLY</button>
+        </div>
+
+
+    </div>
+    <div class="plp-tile-container">
+        <app-animal-tile *ngFor="let animal of animals"></app-animal-tile>
+
+    </div>
+</div>

@@ -21,10 +21,7 @@ export class AppComponent {
   ngOnInit(){
     
   }
-  prova(){
-    console.log(this.adoptOpen,this.therapyOpen, this.trainingOpen , this.sittersOpen);
 
-  }
   switchAdoptStatus(): void {
     if (!this.adoptOpen){
     this.adoptOpen=!this.adoptOpen;

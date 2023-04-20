@@ -11,6 +11,8 @@ import { AdoptPlpComponent } from './components/adopt-plp/adopt-plp.component';
 import { TherapyPlpComponent } from './components/therapy-plp/therapy-plp.component';
 import { TrainingPlpComponent } from './components/training-plp/training-plp.component';
 import { SittersPlpComponent } from './components/sitters-plp/sitters-plp.component';
+import { AnimalTileComponent } from './components/animal-tile/animal-tile.component';
+import { UserTileComponent } from './components/user-tile/user-tile.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { SittersPlpComponent } from './components/sitters-plp/sitters-plp.compon
     AdoptPlpComponent,
     TherapyPlpComponent,
     TrainingPlpComponent,
-    SittersPlpComponent
+    SittersPlpComponent,
+    AnimalTileComponent,
+    UserTileComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UsersService } from 'src/app/services/users.service';
+import { User } from 'src/app/user';
 
 @Component({
   selector: 'app-training-plp',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./training-plp.component.css']
 })
 export class TrainingPlpComponent {
+  users?: Object
+
+  constructor(private service : UsersService){}
+
+  ngOnInit(){
+    this.service.getUsers().subscribe(list => this.users= list);
+  }
 
 }
