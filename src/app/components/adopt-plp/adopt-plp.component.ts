@@ -10,6 +10,7 @@ import { AdoptService } from 'src/app/services/adopt.service';
 export class AdoptPlpComponent {
 
   animals: Animal[] = [];
+  
 
   constructor(private service : AdoptService){}
 

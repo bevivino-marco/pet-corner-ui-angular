@@ -7,9 +7,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UsersService {
+  apiUrl: string = "http://localhost:8765/trainer/v2/trainers/page/1";
   constructor(private http: HttpClient) { }
   
-  getUsers(): Observable<Object>{
-    return this.http.get("https://jsonplaceholder.cypress.io/users");
+  getUsers(): Observable<User[]>{
+    return this.http.get<User[]>(this.apiUrl);
   }
 }

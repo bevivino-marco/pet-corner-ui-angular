@@ -8,12 +8,12 @@ import { User } from 'src/app/user';
   styleUrls: ['./training-plp.component.css']
 })
 export class TrainingPlpComponent {
-  users?: Object
+  trainers?: User []= []
 
   constructor(private service : UsersService){}
 
   ngOnInit(){
-    this.service.getUsers().subscribe(list => this.users= list);
+    this.service.getUsers().subscribe(list => this.trainers= list);
   }
 
 }
