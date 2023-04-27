@@ -2,10 +2,14 @@
     <div class="image-wrap">
         <img src="http://placehold.it/500?text=image" alt="" />
     </div>
-    <h3>Nome:</h3>
-    <h4>Etá:</h4>
-    <h4>Sesso:</h4>
-    <h4>Razza:</h4>
-    <h4>Provenienza:</h4>
-    <button class="compare btn btn-primary">Contatta</button>
+    <div></div><h3>Nome: </h3><span>{{animal.name}}</span>
+    <h4>Etá: </h4><span>{{animal.age}}</span>
+    <h4>Sesso: </h4><span>{{animal.sex}}</span>
+    <h4>Razza: </h4><span>{{animal.type}}</span>
+    <h4>Provenienza: </h4><span>{{animal.provenance}}</span>
+    <h4>Descrizione: </h4><span>{{animal.description}}</span>
+    <div>
+        <button class="contact" (click)="onContattaClick()">Contatta</button>
+    </div>
+   
 </div>

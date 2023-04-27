@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Animal } from 'src/app/animal';
 
 @Component({
   selector: 'app-animal-tile',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./animal-tile.component.css']
 })
 export class AnimalTileComponent {
+  @Input() animal!: Animal;
+
+  constructor(){}
+
+  onContattaClick(){
+    console.log("contatta")
+  }
 
 }

@@ -18,15 +18,6 @@
 
     </div>
     <div class="plp-tile-container">
-        <app-user-tile></app-user-tile>
-        <app-user-tile></app-user-tile>
-        <app-user-tile></app-user-tile>
-        <app-user-tile></app-user-tile>
-        <app-user-tile></app-user-tile>
-        <app-user-tile></app-user-tile>
-        <app-user-tile></app-user-tile>
-        <app-user-tile></app-user-tile>
-        <app-user-tile></app-user-tile>
-        <app-user-tile></app-user-tile>
+        <app-user-tile  *ngFor="let user of trainers" [user]="user"></app-user-tile>
     </div>
 </div>
