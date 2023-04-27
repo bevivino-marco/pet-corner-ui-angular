@@ -13,6 +13,7 @@ import { TrainingPlpComponent } from './components/training-plp/training-plp.com
 import { SittersPlpComponent } from './components/sitters-plp/sitters-plp.component';
 import { AnimalTileComponent } from './components/animal-tile/animal-tile.component';
 import { UserTileComponent } from './components/user-tile/user-tile.component';
+import { ProfileRegistrationComponent } from './components/profile-registration/profile-registration.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UserTileComponent } from './components/user-tile/user-tile.component';
     TrainingPlpComponent,
     SittersPlpComponent,
     AnimalTileComponent,
-    UserTileComponent
+    UserTileComponent,
+    ProfileRegistrationComponent
   ],
   imports: [
     BrowserModule,

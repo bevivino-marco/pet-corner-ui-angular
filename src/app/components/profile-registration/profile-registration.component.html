@@ -1,0 +1,13 @@
+<form  class="add-form" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+      <label for="text">username</label>
+      <input
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+        id="username"
+        placeholder="username@mail.com"
+      />
+    </div>
+    <input type="submit" value="Save Task" class="btn btn-block" />
+  </form>

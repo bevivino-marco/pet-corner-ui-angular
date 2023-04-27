@@ -14,6 +14,7 @@ export class HeaderComponent {
   @Output() trainingClick: EventEmitter<Animal> = new EventEmitter();
   @Output() therapyClick: EventEmitter<Animal> = new EventEmitter();
   @Output() sittersClick: EventEmitter<Animal> = new EventEmitter();
+  @Output() registrationClick = new EventEmitter();
 
 
   ngOnInit(): void{
@@ -35,6 +36,9 @@ export class HeaderComponent {
 
   onAdoptClick(): void{
     this.adoptClick.emit();
+  }
+  onRegistrationClick(): void{
+    this.registrationClick.emit();
   }
 
 }

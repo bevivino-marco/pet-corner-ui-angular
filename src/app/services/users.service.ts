@@ -10,6 +10,6 @@ export class UsersService {
   constructor(private http: HttpClient) { }
   
   getUsers(): Observable<Object>{
-    return this.http.get("https://jsonplaceholder.cypress.io/users");
+    return this.http.get("http://localhost:8765/trainer/v2/trainers");
   }
 }

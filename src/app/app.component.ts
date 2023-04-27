@@ -13,6 +13,7 @@ export class AppComponent {
   therapyOpen: boolean = false;
   trainingOpen: boolean = false;
   sittersOpen: boolean = false;
+  registration: boolean = false;
 
   constructor(){
     
@@ -28,6 +29,7 @@ export class AppComponent {
     this.therapyOpen = false;
     this.trainingOpen = false;
     this.sittersOpen = false;
+    this.registration = false
     }
     console.log(this.adoptOpen,this.therapyOpen, this.trainingOpen , this.sittersOpen);
   }
@@ -37,6 +39,8 @@ export class AppComponent {
       this.adoptOpen = false;
       this.trainingOpen = false;
       this.sittersOpen = false;
+      this.registration = false
+
     }
     console.log(this.adoptOpen,this.therapyOpen, this.trainingOpen , this.sittersOpen);
   }
@@ -46,6 +50,8 @@ export class AppComponent {
       this.therapyOpen = false;
       this.adoptOpen = false;
       this.sittersOpen = false;
+      this.registration = false
+
     }
     console.log(this.adoptOpen,this.therapyOpen, this.trainingOpen , this.sittersOpen);
   }
@@ -55,6 +61,20 @@ export class AppComponent {
       this.therapyOpen = false;
       this.trainingOpen = false;
       this.adoptOpen = false;
+      this.registration = false
+
+    }
+    console.log(this.adoptOpen,this.therapyOpen, this.trainingOpen , this.sittersOpen);
+  }
+
+  switchRegistrationStatus(): void {
+    if (!this.registration){
+      this.registration=!this.registration;
+      this.therapyOpen = false;
+      this.trainingOpen = false;
+      this.adoptOpen = false;
+      this.sittersOpen = false
+
     }
     console.log(this.adoptOpen,this.therapyOpen, this.trainingOpen , this.sittersOpen);
   }
