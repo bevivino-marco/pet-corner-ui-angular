@@ -6,11 +6,6 @@ import { User } from '../user';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json',
-    /*'Content-Length':'<calculated when request is sent>',
-    'Host':'<calculated when request is sent>',*/
-    //'Accept':'*/*',
-    //'Accept-Encoding':'gzip, deflate, br',
-    //'Connection':'keep-alive',
   }),
 };
 
