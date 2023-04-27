@@ -1,13 +1,87 @@
-<form  class="add-form" (ngSubmit)="onSubmit()">
-    <div class="form-control">
-      <label for="text">username</label>
-      <input
-        type="text"
-        name="username"
-        [(ngModel)]="username"
-        id="username"
-        placeholder="username@mail.com"
-      />
-    </div>
-    <input type="submit" value="Save Task" class="btn btn-block" />
+<form name="registrationForm" #registrationForm="ngForm" class="add-form" (ngSubmit)="onSubmit(registrationForm)">
+  
+
+  <div class="form-control">
+    <label for="text">name</label>
+    <input
+      type="text"
+      name="name"
+      [(ngModel)]="name"
+      id="name"
+      placeholder="name"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">username</label>
+    <input
+      type="text"
+      name="username"
+      [(ngModel)]="username"
+      id="username"
+      placeholder="username"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">password</label>
+    <input
+      type="text"
+      name="password"
+      [(ngModel)]="password"
+      id="password"
+      placeholder="password"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">Codice fiscale</label>
+    <input
+      type="text"
+      name="cod_fisc"
+      [(ngModel)]="cod_fisc"
+      id="cod_fisc"
+      placeholder="cod_fisc"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">Partita iva</label>
+    <input
+      type="text"
+      name="piva"
+      [(ngModel)]="piva"
+      id="piva"
+      placeholder="piva"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">Country</label>
+    <input
+      type="text"
+      name="country"
+      [(ngModel)]="country"
+      id="country"
+      placeholder="country"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">city</label>
+    <input
+      type="text"
+      name="city"
+      [(ngModel)]="city"
+      id="city"
+      placeholder="city"
+    />
+  </div>
+  <div class="form-control">
+    <label for="text">address</label>
+    <input
+      type="text"
+      name="address"
+      [(ngModel)]="address"
+      id="address"
+      placeholder="address"
+    />
+  </div>
+
+
+<input type="submit" value="Save User" class="btn btn-block" />
   </form>

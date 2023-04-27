@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { User } from 'src/app/user';
+import { Trainer } from 'src/app/trainer';
 
 @Component({
   selector: 'app-user-tile',
@@ -7,7 +7,7 @@ import { User } from 'src/app/user';
   styleUrls: ['./user-tile.component.css']
 })
 export class UserTileComponent {
-    @Input() user!: User;
+    @Input() user!: Trainer;
 
 
     constructor(){}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { UsersService } from 'src/app/services/users.service';
+import { Trainer } from 'src/app/trainer';
 import { User } from 'src/app/user';
 
 @Component({
@@ -8,7 +9,7 @@ import { User } from 'src/app/user';
   styleUrls: ['./training-plp.component.css']
 })
 export class TrainingPlpComponent {
-  trainers?: User []= []
+  trainers?: Trainer []= []
 
   constructor(private service : UsersService){}
 
