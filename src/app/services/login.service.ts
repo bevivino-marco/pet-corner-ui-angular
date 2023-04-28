@@ -30,7 +30,10 @@ export class LoginService {
     const body = new HttpParams()
     .set('username', username)
     .set('password', password);
+    console.log(username)
     this.username=username;// Username è undefined dopo la logine
+    console.log(this.username)
+
     return this.http.post<Token>(this.apiUrl+"/login",body, httpOptions);
   }
   setToken(token: Token) {
