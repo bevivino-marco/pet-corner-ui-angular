@@ -23,7 +23,7 @@ export class AppComponent {
     
   }
 
-  switchAdoptStatus(): void {
+/*  switchAdoptStatus(): void {
     if (!this.adoptOpen){
     this.adoptOpen=!this.adoptOpen;
     this.therapyOpen = false;
@@ -66,16 +66,16 @@ export class AppComponent {
     }
     console.log(this.adoptOpen,this.therapyOpen, this.trainingOpen , this.sittersOpen);
   }
-
+*/
   switchRegistrationStatus(): void {
-    if (!this.registration){
+   /* if (!this.registration){
       this.registration=!this.registration;
       this.therapyOpen = false;
       this.trainingOpen = false;
       this.adoptOpen = false;
       this.sittersOpen = false
 
-    }
+    }*/
     console.log(this.adoptOpen,this.therapyOpen, this.trainingOpen , this.sittersOpen);
   }
 

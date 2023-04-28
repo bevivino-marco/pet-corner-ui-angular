@@ -4,25 +4,30 @@
     </div>
     <div class="options-container">
         <ul>
-            <li (click)="onAdoptClick()">
-                <span>ADOPT</span>
+            <li >
+                <span routerLink="/adopt">ADOPT 
+                </span>
             </li>
 
-            <li (click)="onTherapyClick()">
-                <span>THERAPY</span>
+            <li >
+                <span routerLink="/therapy">THERAPY
+                </span>
             </li>
 
-            <li (click)="onTrainingClick()">
-                <span>TRAINING</span>
+            <li>
+                <span routerLink="/training">TRAINING
+                </span>
             </li>
 
-            <li (click)="onSittersClick()">
-                <span>SITTING</span>
+            <li >
+                <span routerLink="/sitting">SITTING
+                </span>
             </li>
         </ul>
     </div>
-    <button (click)="onRegistrationClick()">Registration</button>    
-    <button>Log in</button>
+    <button (click)="onRegistrationClick()" routerLink="/registration">Registration</button>    
+    <button routerLink="/login" *ngIf="!loginFlag">Log in</button>
+    <button routerLink="/adopt" *ngIf="loginFlag" (click)="logOut()">Log out</button>
 </div>
 
 

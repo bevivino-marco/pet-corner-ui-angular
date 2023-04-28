@@ -1,0 +1,29 @@
+<form name="loginForm" #loginForm="ngForm" class="add-form" (ngSubmit)="onSubmit(loginForm)">
+  
+
+    <div class="form-control">
+      <label for="text">username</label>
+      <input
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+        id="username"
+        placeholder="username@mail.com"
+      />
+    </div>
+    <div class="form-control">
+      <label for="text">password</label>
+      <input
+        type="text"
+        name="password"
+        [(ngModel)]="password"
+        id="password"
+        placeholder="password"
+      />
+    </div>
+
+  
+  
+  <input type="submit" value="LOG IN" class="btn btn-block" />
+    </form>
+    <div *ngIf="badRequest">Username or password are not correct, check if the are right or <a routerLink="/registration">register</a></div>

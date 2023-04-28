@@ -1,13 +1,6 @@
 <div class="container"> 
-  <app-header (adoptClick)="switchAdoptStatus()"
-  (therapyClick)="switchTherapyStatus()"
-  (trainingClick)="switchTrainingStatus()"
-  (sittersClick)="switchSittersStatus()"
+  <app-header 
   (registrationClick)="switchRegistrationStatus()"
   ></app-header>
-  <app-adopt-plp *ngIf="adoptOpen"></app-adopt-plp>
-  <app-therapy-plp *ngIf="therapyOpen"></app-therapy-plp>
-  <app-training-plp *ngIf="trainingOpen"></app-training-plp>
-  <app-sitters-plp *ngIf="sittersOpen"></app-sitters-plp>
-  <app-profile-registration *ngIf="registration"></app-profile-registration>
+<router-outlet></router-outlet>
 </div>
